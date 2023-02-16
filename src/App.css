@@ -1,0 +1,140 @@
+.app__form{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0003;
+    backdrop-filter: blur(2px);
+    transform: scale(0);
+    transition: transform 200ms ease;
+}
+.app__form-visible{
+    transform: scale(1);
+}
+.app{
+    display: grid;
+    gap: 3rem;
+}
+.navBar{
+    display: grid;
+    justify-content: center;
+}
+.form{
+    padding: 1.2em;
+    width: 100%;
+    max-width: 350px;
+    background-color: white;
+    height: max-content;
+    border-radius: 0.7em;
+    position: relative;
+}
+.form__title {
+    font-size: 1.5rem;
+    margin-bottom: 0.6em;
+}
+.form__x{
+    position: absolute;
+    right: 2em;
+    top: 1.2em;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 100ms ease;
+}
+.form__x:hover {
+    transform: scale(1.5);
+}
+.form__item{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    margin-bottom: 0.8em;
+}
+.form__label {
+    color: rgb(54,53,53);
+    padding-left: 1em;
+}
+.form__input{
+    padding: 0.4em 0.8em;
+    font-family: inherit;
+}
+.form__btn {
+    width: 100%;
+    padding: 0.8em;
+    background-color: #555A88;
+    color: white;
+    cursor: pointer;
+}
+.app__btn-form{
+    border: 2px solid black;
+    width: 100px;
+    padding: 0.8em;
+    background-color: #555A88;
+    color: white;
+    cursor: pointer;
+    border-radius: 0.6em;
+    transition: transform 0.5s;
+}
+.app__btn-form:hover{
+    transform: translateY(-5px);
+}
+.users{
+    background-color: #555A88;
+    color: white;
+    height: 150px;
+    border: 3px solid #dbe4ed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 4rem 4rem; 
+    font-style: italic;
+}
+.user__card{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 5rem;
+}
+.user__card-box{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    padding-top: 1.5rem;
+    border: 2px solid black;
+    border-radius: 0.5em;
+    padding-left: 20px;
+    transition: background-color 0.5s;
+    background-color: #555A88;
+}
+.user__card-box:hover{
+    background-color: #33375e;
+    color: white;
+}
+li{
+    margin-top: 20px;
+}
+.btn__cards{
+    display: flex;
+    justify-content: end;
+    gap: 0.5em;
+    margin: 5px;
+}
+.btn__hover{
+    border: 2px solid black;
+    border-radius: 0.5em;
+    height: 20px;
+    width: 80px;
+    transition: transform 0.5s;
+    background-color: #555A88;
+}
+.btn__hover:hover{
+    transform: translateY(-5px);
+    background-color: whitesmoke;
+}
